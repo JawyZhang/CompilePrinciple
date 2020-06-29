@@ -139,7 +139,7 @@ class Analyzer:
                 self.getChar()
             self.retract()
             value = self.insertConst()
-            return self.strToken,
+            return self.strToken,value
 
         elif self.ch == ':':
             self.concat()

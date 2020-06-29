@@ -1,16 +1,10 @@
 '''
 四则运算文法：
-exp -> exp addop term | term
-addop -> + | -
-term -> term mulop factor | factor
-mulop -> * | /
-factor -> (exp) | number
-
-E->EAT|T
-A->+|-
-T->TMF|F
-M->*|/
-F->(E)|number
+E→TE'
+E'→+TE'| -TE' |ε
+T→FT'
+T'→*FT'| /FT' |ε
+F→(E) | id |num
 
 '''
 

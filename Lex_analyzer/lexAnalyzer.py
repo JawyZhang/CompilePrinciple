@@ -10,8 +10,8 @@ class Analyzer:
         self.keyWordList = ['begin', 'end' ,'if' ,'then', 'while', 'do', 'const', 'var','call','procedure'];
         self.operatorList = [ '+', '-', '*', '/', ]
         self.delimiterList = ['(',')' ,',' ,'.',';']
-        self.identList = []
-        self.constList = []
+        self.identList = []  # 标志符表
+        self.constList = []  # 常数表
         self.txtLen = len(self.txt)
 
     def getChar(self):

@@ -7,19 +7,20 @@ F→(E) | id |num
 
 
 求得FIRST集和FOLLOW集
-FIRST(E) = {(,i,n}
+FIRST(E) = {(,id,num}
 FIRST(E') = {+,-,空}
-FIRST(T) = {(,i,n}
+FIRST(T) = {(,i,num}
 FIRST(T')= {*,/,空}
-FIRST(F) = {(,i,n}
+FIRST(F) = {(,id,num}
 
-FOLLOW(E)={}
-FOLLOW(E')={}
-FOLLOW(T)={}
-FOLLOW(T')={}
-FOLLOW(F)={}
+FOLLOW(E)={#,)}
+FOLLOW(E')={#,)}
+FOLLOW(T)={+,-,#,)}
+FOLLOW(T')={+,-,#,)}
+FOLLOW(F)={+,-,*,/,#}
 '''
 import warnings
+
 ip = 0 # 输入串指示器，总是指向下一个未处理的符号
 #s = "(num/id)-id" #测试串1，匹配成功
 s = "(num+id)-id" #测试串1，匹配成功
@@ -27,11 +28,11 @@ sym = s[ip]
 isTrue = True
 
 follow = {
-    'E': [],
-    'E_': [],
-    'T': [],
-    'T_': [],
-    'F': []
+    'E': ['#', ')'],
+    'E_': ['#', ')'],
+    'T': ['+', '-', '#', ')'],
+    'T_': ['+', '-', '#', ')'],
+    'F': ['+', '-', '*', '/', '#', ')']
 }
 
 
@@ -39,9 +40,9 @@ def advance():  # 使IP进一位
     global ip
     global sym
     if ip<len(s)-1:
+        print(sym, end='')
         ip += 1
         sym = s[ip]
-        print(sym)
 
 
 def error():
@@ -65,7 +66,8 @@ def E_():  # E'→+TE'| -TE' |ε
         T()
         E_()
     else :
-        judge_follow("E_")
+        if ip < len(s) - 1:
+            judge_follow("E_")
 
 
 def T():  # T→FT'
@@ -83,7 +85,8 @@ def T_():  # T'→*FT'| /FT' |ε
         F()
         T_()
     else:
-        judge_follow("T_")
+        if ip < len(s) - 1:
+            judge_follow("T_")
 
 
 def F():  # F→(E) | id |num
@@ -127,9 +130,10 @@ def run():
     global isTrue
     E()
     if isTrue:
-        print("匹配成功")
+        print(sym, end='')
+        print("\n匹配成功")
     else:
-        print("匹配失败")
+        print("\n匹配失败")
 
 
 run()

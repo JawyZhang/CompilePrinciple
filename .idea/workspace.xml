@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8857c69-9fbc-4450-af30-07968daba94b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Recursive_descent_analyzer/RDAnalyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LexAnalyzer/lexAnalyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lex_Analyzer/lexAnalyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LexAnalyzer/src.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lex_Analyzer/src.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="a8857c69-9fbc-4450-af30-07968daba94b" name="Default Changelist" comment="算符优先" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lex_Analyzer/lexAnalyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="404">
+              <caret line="88" column="22" lean-forward="true" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -34,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Simple_calculator/Op_Precedence.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            <state relative-caret-position="532">
+              <caret line="58" column="23" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -47,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="76">
+              <first_editor relative-caret-position="-38">
                 <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               </first_editor>
               <second_editor />
@@ -81,6 +75,7 @@
       <find>op1</find>
       <find>id1</find>
       <find>list</find>
+      <find>return</find>
     </findStrings>
     <replaceStrings>
       <replace>self.ch</replace>
@@ -98,14 +93,14 @@
       <list>
         <option value="$PROJECT_DIR$/src.txt" />
         <option value="$PROJECT_DIR$/lexAnalyzer.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Recursive_descent_analyzer/RDAnalyzer.py" />
-        <option value="$PROJECT_DIR$/Simple_calculator/Op_Precedence.py" />
         <option value="$PROJECT_DIR$/Lex_Analyzer/lexAnalyzer.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Simple_calculator/Op_Precedence.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="951" />
     <option name="width" value="978" />
     <option name="height" value="1039" />
@@ -137,6 +132,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../yolov3" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -158,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lexAnalyzer (1)">
+  <component name="RunManager" selected="Python.Op_Precedence">
     <configuration name="Op_Precedence" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LexAnalyzer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,8 +241,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lexAnalyzer (1)" />
         <item itemvalue="Python.Op_Precedence" />
+        <item itemvalue="Python.lexAnalyzer (1)" />
         <item itemvalue="Python.RDAnalyzer" />
         <item itemvalue="Python.lexAnalyzer" />
       </list>
@@ -270,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592901843819</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1593417571697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593417571697</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -291,7 +294,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30028328" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30028328" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -305,7 +308,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -332,7 +335,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="76">
+          <first_editor relative-caret-position="-38">
             <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           </first_editor>
           <second_editor />
@@ -360,17 +363,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Simple_calculator/Op_Precedence.py">
+    <entry file="file://$PROJECT_DIR$/Lex_Analyzer/lexAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        <state relative-caret-position="404">
+          <caret line="88" column="22" lean-forward="true" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lex_Analyzer/lexAnalyzer.py">
+    <entry file="file://$PROJECT_DIR$/Simple_calculator/Op_Precedence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="85" column="17" lean-forward="true" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state relative-caret-position="532">
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="23" />
         </state>
       </provider>
     </entry>
